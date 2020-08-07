@@ -1,0 +1,22 @@
+name: Deploy Workflow
+on:
+  push:
+    branches: [master]
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: login via ssh to the server
+        uses: applebot/ssh-actions@master
+        with:
+          host: 34.69.89.26
+          username: ${{ secrets.ALMONDX_ALKHALAF_DEV_USERNAME }}
+          key: ${{ secrets.ALMONDX_ALKHALAF_DEV_SERVER_KEY }}
+          port: 22
+          script: |
+            cd /home/almondx/code/Split_It_App_Landing_Page
+            git pull origin master
+            jekyll build
+            cp -r ./_site/. /var/www/split-it.alkhalaf.dev/html
