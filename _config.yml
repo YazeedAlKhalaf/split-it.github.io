@@ -36,7 +36,7 @@ features:
     fontawesome_icon_name: magic
 
   - title: Easy to use, Straightforward
-    description: The app is pretty wasy to use. Choose a video. Choose Cut Template. Export Ouput. You're Done 🎊
+    description: The app is pretty easy to use. Choose a video. Choose a Cut Template. Export your Masterpiece. You're Done 🎊
     fontawesome_icon_name: mobile
 
   - title: Precise splitting, 🚀 blazing fast
@@ -48,11 +48,11 @@ features:
     fontawesome_icon_name: star
 
   - title: High-Quality Mode Support
-    description: High-Quakity mode gives you precise cuts and more well-done videos 😎
+    description: High-Quakity mode gives you precise cuts and more well-done videos 😎.
     fontawesome_icon_name: industry
 
   - title: Multi-Language Support
-    description: Add features (like this one) to your site via the _config.yml file. No HTML/CSS needed.
+    description: Split It supports 5 different languages; English, Arabic, Turkish, Hindi, and Chinese.
     fontawesome_icon_name: language
 
 # Theme Settings
