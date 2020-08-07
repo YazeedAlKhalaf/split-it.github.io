@@ -8,8 +8,8 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     steps:
-      - name: login via ssh to the server
-        uses: applebot/ssh-actions@master
+      - name: SSH Remote Commands
+        uses: appleboy/ssh-action@v0.1.2
         with:
           host: 34.69.89.26
           username: ${{ secrets.ALMONDX_ALKHALAF_DEV_USERNAME }}
